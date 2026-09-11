@@ -1,7 +1,8 @@
 console.log("Enter the ducky mainframe....")
 
 // ======= Constants ========= //
-
+const duckButton = document.getElementById("quack-button");
+const duckSpeech = document.getElementById("duck-speech");
 
 // ======== Variables / Arrays ======= //
 const starColours = [
@@ -15,6 +16,22 @@ const starColours = [
     "#fde68a", // warm yellow
     "#fef3c7", // cream
     "#67e8f9"  // cyan
+];
+
+const duckMessages = [
+    "quack!",
+    "hello :3",
+    "you found me!",
+    "QUACK QUACK",
+    "what are you doing here?",
+    "welcome to lindles.xyz!",
+    "honk",
+    "i am a duck",
+    "have you seen my bread?",
+    "beep beep",
+    "quack.exe is running",
+    "nice to meet you!",
+    "🦆",
 ];
 
 // ======== Star Generation ========= //
@@ -57,3 +74,12 @@ function updateClock() {
 updateClock();
 
 setInterval(updateClock, 1000);
+
+// =========== Duck Talking ========= //
+duckButton.addEventListener("click", function () {
+
+    const randomIndex = Math.floor(Math.random() * duckMessages.length);
+
+    duckSpeech.textContent = duckMessages[randomIndex];
+
+});

@@ -92,3 +92,176 @@ body {
     background-color: rgba(139, 123, 184, 0.35);
     transform: translateY(-2px);
 }
+
+.hero-panel {
+    width: 100% - 200px;
+    min-height: 260px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-bottom: 8px;
+    border: 3px solid #e6e600;
+    border-radius: 12px;
+    background-color: rgba(230, 230, 0, 0.12);
+    box-shadow: 0 0 10px rgba(230, 230, 0, 0.25);
+}
+
+.hero-text {
+    width: 65%;
+}
+
+
+.hero-label {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 0 10px;
+    border-radius: 6px;
+    background-color: rgba(230, 230, 0, 0.2);
+    font-size: 11px;
+}
+
+
+.hero-text h2 {
+    margin: 0 0 10px;
+    font-family: "Courier New", monospace;
+    font-size: 38px;
+}
+
+
+.hero-text h2 span {
+    color: rgb(74, 185, 0);
+}
+
+
+.hero-text > p {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero-duck {
+    width: 30%;
+    text-align: center;
+}
+
+
+.hero-duck p {
+    margin: 0 0 8px;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+
+.hero-duck img {
+    width: 150px;
+    image-rendering: pixelated;
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 18px;
+
+}
+
+
+.hero-buttons a,
+.hero-buttons button {
+    padding: 8px 12px;
+    border: 2px solid #8b6ac4;
+    border-radius: 7px;
+    background-color: rgba(139, 106, 196, 0.25);
+    color: white;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.hero-buttons a:hover,
+.hero-buttons button:hover {
+    background-color: rgba(139, 106, 196, 0.45);
+}
+
+.scroll-panel {
+    width: 100% - 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border: 2px solid #f9a8d4;
+    border-radius: 8px;
+    background-color: rgba(249, 168, 212, 0.10);
+}
+
+.scroll-track {
+    display: flex;
+    width: max-content;
+    gap: 35px;
+    white-space: nowrap;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    animation: scroll-text 15s linear infinite;
+}
+
+.scroll-track span {
+    display: inline-block;
+}
+
+@keyframes scroll-text {
+    from {
+        transform: translateX(110%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.duck-speech {
+    position: relative;
+    display: inline-block;
+
+    min-width: 100px;
+    max-width: 180px;
+
+    margin-bottom: 12px;
+    padding: 8px 12px;
+
+    border: 2px solid #f9a8d4;
+    border-radius: 10px;
+
+    background-color: rgba(249, 168, 212, 0.15);
+
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* little speech-bubble triangle */
+.duck-speech::after {
+    content: "";
+
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: #151020;
+
+    border-right: 2px solid #f9a8d4;
+    border-bottom: 2px solid #f9a8d4;
+
+    transform: translateX(-50%) rotate(45deg);
+}
