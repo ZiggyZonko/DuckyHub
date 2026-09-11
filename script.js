@@ -23,7 +23,7 @@ const duckMessages = [
     "hello :3",
     "you found me!",
     "QUACK QUACK",
-    "what are you doing here?",
+    "what are you doing here!?",
     "welcome to lindles.xyz!",
     "honk",
     "i am a duck",
@@ -32,6 +32,10 @@ const duckMessages = [
     "quack.exe is running",
     "nice to meet you!",
     "🦆",
+    "smooth seas don't make good sailors ⛵️",
+    "sitting duck",
+    "get your ducks in order you ducky",
+    "PhiDuck"
 ];
 
 // ======== Star Generation ========= //
