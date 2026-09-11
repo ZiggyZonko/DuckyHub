@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title> DuckyHub </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/spotify.css">
 </head>
 
 <body>
@@ -29,56 +30,83 @@
 
         </header>
 
-        <section class="hero-panel">
+        <div class="panels">
+            <section class="hero-panel">
 
-            <div class="hero-text">
+                <div class="hero-text">
 
-                <p class="hero-label">★ welcome to my website ★</p>
+                    <p class="hero-label">★ welcome to my website ★</p>
 
-                <h2>Hi! I'm <span>Lindles</span> :) </h2>
+                    <h2>Hi! I'm <span>Lindles</span> :) </h2>
 
-                <p>
-                    welcome to my little corner of the internet!
-                    this is where i put all the random things
-                    i've made, learned, liked and found interesting.
-                </p>
+                    <p>
+                        welcome to my little corner of the internet!
+                        this is where i put all the random things
+                        i've made, learned, liked and found interesting.
+                    </p>
 
-                <div class="hero-buttons">
-                    <a href="#">come explore →</a>
-                    <button id="quack-button">🦆 quack</button>
-                </div>
-
-            </div>
-
-
-            <div class="hero-duck">
-
-                <div id="duck-speech" class="duck-speech">
+                    <div class="hero-buttons">
+                        <a href="#">come explore →</a>
+                        <button id="quack-button">🦆 quack</button>
+                    </div>
 
                 </div>
 
-                <p>ALBERT EGGSTEIN</p>
 
-                <img src="assets/duck.png" alt="pixel duck">
+                <div class="hero-duck">
 
-            </div>
+                    <div id="duck-speech" class="duck-speech">
 
-        </section>
+                    </div>
 
-        <section class="scroll-panel">
+                    <p>ALBERT EGGSTEIN</p>
 
-            <div class="scroll-track">
-                <span>★ welcome to lindles.xyz ★</span>
-                <span>• currently coding something probably •</span>
-                <span>★ quack quack ★</span>
-                <span>• thanks for visiting! •</span>
-                <span>★ made by Lindles ★</span>
-                <span>• please enjoy the website •</span>
-            </div>
+                    <img src="assets/duck.png" alt="pixel duck">
 
-        </section>
+                </div>
+
+            </section>
+
+            <section class="scroll-panel">
+
+                <div class="scroll-track">
+                    <span>★ welcome to lindles.xyz ★</span>
+                    <span>• currently coding something probably •</span>
+                    <span>★ quack quack ★</span>
+                    <span>• thanks for visiting! •</span>
+                    <span>★ made by Lindles ★</span>
+                    <span>• please enjoy the website •</span>
+                </div>
+
+            </section>
+
+            <section class="panel spotify-panel">
+
+                <div class="spotify-heading">
+                    <span>♫</span>
+                    <h2>currently playing</h2>
+                </div>
+
+                <div id="spotify-content">
+
+                    <div class="spotify-placeholder">
+                        <div class="spotify-note">♫</div>
+
+                        <div>
+                            <strong>nothing playing...</strong>
+                            <p>put some music on!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button id="spotify-login">connect spotify</button>
+
+            </section>
+        </div>
 
     </div>
 
+    <script src="utils/spotify.js"></script>
     <script src="script.js"></script>
 </body>

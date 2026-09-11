@@ -124,6 +124,14 @@ body {
     font-size: 11px;
 }
 
+.panel,
+.hero-panel,
+.scroll-panel {
+    width: calc(100% - 10%);
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
 
 .hero-text h2 {
     margin: 0 0 10px;
@@ -204,9 +212,6 @@ body {
 }
 
 .scroll-panel {
-    width: 100% - 200px;
-    margin-left: 100px;
-    margin-right: 100px;
     box-sizing: border-box;
     overflow: hidden;
     margin-bottom: 8px;
