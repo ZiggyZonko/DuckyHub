@@ -1,0 +1,73 @@
+.about-panel {
+    min-height: 260px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-bottom: 8px;
+    border: 3px solid #e6005c;
+    border-radius: 12px;
+    background-color: rgba(230, 230, 0, 0.12);
+    box-shadow: 0 0 10px rgba(230, 230, 0, 0.25);
+}
+
+.hero-text {
+    width: 65%;
+}
+
+
+.hero-label {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 0 10px;
+    border-radius: 6px;
+    background-color: rgba(230, 230, 0, 0.2);
+    font-size: 11px;
+}
+
+.panel,
+.hero-panel,
+.scroll-panel {
+    width: calc(100% - 10%);
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+
+.hero-text h2 {
+    margin: 0 0 10px;
+    font-family: "Courier New", monospace;
+    font-size: 38px;
+}
+
+
+.hero-text h2 span {
+    color: rgb(74, 185, 0);
+}
+
+
+.hero-text > p {
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.hero-duck {
+    width: 30%;
+    text-align: center;
+}
+
+
+.hero-duck p {
+    margin: 0 0 8px;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+
+.hero-duck img {
+    width: 150px;
+    image-rendering: pixelated;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
