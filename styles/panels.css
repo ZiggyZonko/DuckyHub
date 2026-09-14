@@ -1,0 +1,105 @@
+.panel-row {
+    width: 90%;
+    margin: 8px auto 0;
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 8px;
+}
+
+.panel-row .panel {
+    width: auto;
+    margin: 0;
+}
+
+.about-panel {
+    flex: 2;
+    border-color: #93c5fd;
+    background-color: rgba(147, 197, 253, 0.12);
+}
+
+.about-panel h2 {
+    color: #93c5fd;
+}
+
+.about-content {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.about-content p {
+    margin: 0 0 12px;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    margin: 15px 0;
+}
+
+.about-list div {
+    padding: 7px;
+
+    border: 1px solid rgba(147, 197, 253, 0.5);
+    border-radius: 6px;
+
+    background-color: rgba(147, 197, 253, 0.08);
+}
+
+.about-list span {
+    margin-right: 5px;
+}
+
+.about-status {
+    padding-top: 8px;
+
+    color: #fde68a;
+
+    font-size: 11px;
+}
+
+.math-panel {
+    border-color: #67e8f9;
+    background-color: rgba(103, 232, 249, 0.12);
+}
+
+.math-panel h2 {
+    color: #67e8f9;
+}
+
+.math-problem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.math-problem img {
+    display: block;
+
+    max-width: 100%;
+    max-height: 230px;
+
+    object-fit: contain;
+
+    border: 2px solid #67e8f9;
+    border-radius: 6px;
+
+    background: rgba(0, 0, 0, 0.2);
+
+    box-sizing: border-box;
+}
+
+.math-hint {
+    margin: 8px 0 0;
+
+    text-align: center;
+
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+
+    color: rgba(255, 255, 255, 0.7);
+}

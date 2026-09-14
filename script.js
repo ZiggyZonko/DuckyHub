@@ -6,6 +6,7 @@ console.log("Enter the ducky mainframe....")
 
     const duckButton = document.getElementById("quack-button");
     const duckSpeech = document.getElementById("duck-speech");
+    const numberOfProblems = 22;
 
 // ======== Variables / Arrays ======= //
 
@@ -145,3 +146,10 @@ function unlockAchievement(id) {
     }, 4000);
 
 }
+
+//========== Math Problem ========= //
+const randomNumber =
+    Math.floor(Math.random() * numberOfProblems) + 1;
+
+document.getElementById("math-problem-image").src =
+    `assets/mathproblems/${randomNumber}.png`;

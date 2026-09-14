@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/spotify.css">
     <link rel="stylesheet" href="styles/star.css">
     <link rel="stylesheet" href="styles/popup.css">
+    <link rel="stylesheet" href="styles/panels.css"
 
     <!-- Three.js import map -->
     <script type="importmap">
@@ -154,54 +155,95 @@
             </section>
 
 
-            <!-- ======================================
-                 SPOTIFY
-                 ====================================== -->
+            <div class="panel-row">
 
-            <section class="panel spotify-panel">
+                <section class="panel spotify-panel">
 
-                <div class="spotify-heading">
+                    <div class="spotify-heading">
+                        <span>♫</span>
+                        <h2>currently playing</h2>
+                    </div>
 
-                    <span>♫</span>
+                    <div id="spotify-content">
 
-                    <h2>
-                        currently playing
-                    </h2>
+                        <div class="spotify-placeholder">
+                            <div class="spotify-note">♫</div>
 
-                </div>
-
-
-                <div id="spotify-content">
-
-                    <div class="spotify-placeholder">
-
-                        <div class="spotify-note">
-                            ♫
-                        </div>
-
-                        <div>
-
-                            <strong>
-                                nothing playing...
-                            </strong>
-
-                            <p>
-                                put some music on!
-                            </p>
-
+                            <div>
+                                <strong>nothing playing...</strong>
+                                <p>put some music on!</p>
+                            </div>
                         </div>
 
                     </div>
 
-                </div>
+                    <button id="spotify-login">connect spotify</button>
+
+                </section>
 
 
-                <button id="spotify-login">
-                    connect spotify
-                </button>
+                <section class="panel about-panel">
 
-            </section>
+                    <h2>★ about me ★</h2>
 
+                    <div class="about-content">
+
+                        <p>
+                            hey! i'm Lindles :D
+                        </p>
+
+                        <p>
+                            i'm a programmer, maker and general
+                            enjoyer of making random things.
+                        </p>
+
+                        <div class="about-list">
+
+                            <div>
+                                <span>💻</span>
+                                <strong>coding</strong>
+                            </div>
+
+                            <div>
+                                <span>⚡</span>
+                                <strong>electronics</strong>
+                            </div>
+
+                            <div>
+                                <span>🔭</span>
+                                <strong>physics</strong>
+                            </div>
+
+                            <div>
+                                <span>📐</span>
+                                <strong>mathematics</strong>
+                            </div>
+
+                        </div>
+
+                        <p class="about-status">
+                            currently: probably making something
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <section class="panel math-panel">
+
+                    <h2>★ today's problem ★</h2>
+
+                    <div class="math-problem">
+                        <img id="math-problem-image" src="" alt="Random maths problem">
+                    </div>
+
+                    <p class="math-hint">
+                        can you solve it?
+                    </p>
+
+                </section>
+
+            </div>
         </div>
 
     </div>
