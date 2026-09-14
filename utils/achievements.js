@@ -16,10 +16,10 @@ export const achievements = {
         icon: "🌎"
     },
 
-    star_hunter: {
-        name: "Star Hunter",
-        description: "You found a secret star.",
-        icon: "⭐"
+    duck_petter: {
+        name: "Duck Petter",
+        description: "You touched the duck 5 too many times...",
+        icon: "✋️"
     }
 
 };

@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/star.css">
     <link rel="stylesheet" href="../styles/link.css">
+    <link rel="stylesheet" href="../styles/popup.css">
     <link rel="stylesheet" href="../styles/footer.css">
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
 
     <script type="importmap">
     {
@@ -198,7 +202,57 @@
 
     </div>
 
+    <!-- ======================================
+         DUCK PLANET OVERLAY
+         ====================================== -->
+
+    <div id="duck-planet-overlay">
+
+        <button id="close-duck-planet">
+            ✕
+        </button>
+
+
+        <div class="duck-planet-title">
+
+            <span>★</span>
+
+            THE DUCK PLANET
+
+            <span>★</span>
+
+        </div>
+
+
+        <div id="duck-planet-container"></div>
+
+
+        <p class="duck-planet-help">
+            drag to rotate • scroll to zoom
+        </p>
+
+    </div>
+
+    <div id="achievement-popup">
+
+        <div class="achievement-icon">
+            🏆
+        </div>
+
+        <div>
+            <div class="achievement-label">
+                ACHIEVEMENT UNLOCKED
+            </div>
+
+            <div id="achievement-name">
+                Achievement!
+            </div>
+        </div>
+
+    </div>
+
     <script src="../utils/random.js"></script>
+    <script type="module" src="../utils/duck.js"></script>
     <script type="module" src="../script.js"></script>
     <script src="../utils/stars.js"></script>
 

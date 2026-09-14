@@ -286,3 +286,8 @@ body {
 
     gap: 8px;
 }
+
+.footer-duck {
+    cursor: pointer;
+    user-select: none;
+}

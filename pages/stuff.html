@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Links • lindles.xyz</title>
+    <title>My Stuff • lindles.xyz</title>
 
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/star.css">
-    <link rel="stylesheet" href="../styles/link.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/popup.css">
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/stuff.css">
+
+    <!-- GitHub / language icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="icon" type="image/png" href="./assets/favicon.png">
-
 
     <script type="importmap">
     {
@@ -52,66 +57,57 @@
         </header>
 
 
-        <!-- ================= LINKS PAGE ================= -->
+        <!-- ================= STUFF PAGE ================= -->
 
-        <main class="links-page">
+        <main class="stuff-page">
 
-            <div class="page-title">
+            <div class="stuff-title">
 
                 <span>★</span>
 
-                <h2>about me</h2>
+                <h2>my stuff</h2>
 
                 <span>★</span>
 
             </div>
 
-            <p class="page-subtitle">
-                websites i like, use, visit way too often, or just think are cool
+            <p class="stuff-subtitle">
+                projects, experiments, code and other things i've made
             </p>
 
 
-            <section class="about-panel">
+            <!-- ================= GITHUB ================= -->
 
-                <div class="about-text">
+            <section class="github-section">
 
-                    <h2>
-                        <span> ★ the origin story... ★</span>
-                    </h2>
+                <div class="section-heading">
 
-                    <p>
-                        Hello! I'm ZiggyZonko / Zachary / Lindles etc. (you probably already knew that prior to clicking on this page). I love to code, like this website,
-                        and also love to create things and most of all, learn. My aspirations are to become an engineer / physicist for NASA and someday found AstroDuck! (mark my words...)<br?>
-                        <br>
-                        <br> Obssessed with ducks if you couldn't tell already <br> <br>
+                    <div>
+                        <h3>★ GitHub repositories</h3>
 
-                        I am currently working on my operating system LindlesOS at the time of writing this (14/09/2026), and have many existing projects that I'm too lazy to finish... <br>
-                        
-                        <br> My favourite greek letter is phi, representing the golden ratio, a motif of unachievable natural perfection, not calculated by man, but found in sunflowers, pinecones, hurricane arms etc.
+                        <p>
+                            automatically loaded from my GitHub
+                        </p>
+                    </div>
 
-                        <br><br> I finally switched to cachyos this month, best decision of my programming career, already gaining more ground than windows could ever cover.
-
-                        <br><br> My programming obsession spurred from my first code workshop, then spiralled to programming for my dad and now doing my own thing, with going in my first game jam earlier this year (2026) ~ Hack Club Campfire
-
-                        <br><br> 
+                    <a
+                        href="https://github.com/ZiggyZonko"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="github-profile"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
 
                 </div>
 
 
-                <div class="hero-duck">
+                <div id="github-projects">
 
-                    <p>old github profile</p>
-
-                    <img
-                        src="../assets/githubprofile.png"
-                        alt="pixel duck"
-                    >
-
-                    <p>contemporary github profile</p>
-                    <img
-                        src="../assets/pfp.png"
-                        alt="pixel duck"
-                    >
+                    <p class="github-loading">
+                        loading repositories...
+                    </p>
 
                 </div>
 
@@ -119,7 +115,10 @@
 
         </main>
 
-    <footer>
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
 
             <div class="footer-duck">
                 🦆
@@ -186,9 +185,15 @@
 
     </div>
 
+
     <script src="../utils/random.js"></script>
+
     <script type="module" src="../utils/duck.js"></script>
+
+    <script src="../utils/github.js"></script>
+
     <script type="module" src="../script.js"></script>
+
     <script src="../utils/stars.js"></script>
 
 </body>
