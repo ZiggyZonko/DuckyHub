@@ -1,0 +1,8 @@
+name = "lindlesxyz"
+compatibility_date = "2026-09-14"
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "lindles"
+database_name = "lindles"
+database_id = "47dc2351-d2c9-4f94-a8b5-b793b555e4c4"

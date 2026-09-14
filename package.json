@@ -5,7 +5,9 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "wrangler pages dev .",
+    "cf:dev": "wrangler pages dev .",
+    "cf:deploy": "wrangler pages deploy ."
   },
   "repository": {
     "type": "git",
@@ -17,9 +19,7 @@
     "url": "https://github.com/ZiggyZonko/LindlesXYZ/issues"
   },
   "homepage": "https://github.com/ZiggyZonko/LindlesXYZ#readme",
-  "dependencies": {
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "mongodb": "^7.6.0"
+  "devDependencies": {
+    "wrangler": "^4.131.2"
   }
 }

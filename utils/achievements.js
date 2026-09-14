@@ -78,37 +78,27 @@ function showAchievementPopup(id) {
         return;
     }
 
-    const popup = document.createElement("div");
+    const popup = document.getElementById("achievement-popup");
+    const icon = popup.querySelector(".achievement-icon");
+    const name = popup.querySelector("#achievement-name");
 
-    popup.classList.add("achievement-popup");
+    if (!popup || !icon || !name) {
+        return;
+    }
 
-    popup.innerHTML = `
-        <span class="achievement-popup-icon">
-            ${achievement.icon}
-        </span>
+    icon.textContent = achievement.icon;
+    name.textContent = achievement.name;
 
-        <div>
-            <small>ACHIEVEMENT UNLOCKED</small>
-            <strong>${achievement.name}</strong>
-        </div>
-    `;
+    // Make sure the animation can restart
+    popup.classList.remove("show");
 
-    document.body.appendChild(popup);
-
-    setTimeout(() => {
+    requestAnimationFrame(() => {
         popup.classList.add("show");
-    }, 10);
+    });
 
     setTimeout(() => {
-
         popup.classList.remove("show");
-
-        setTimeout(() => {
-            popup.remove();
-        }, 300);
-
     }, 3500);
-
 }
 
 

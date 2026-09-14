@@ -1,0 +1,29 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/messages",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/messages.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/messages",
+      "mountPath": "/api",
+      "method": "POST",
+      "module": [
+        "api/messages.js:onRequestPost"
+      ]
+    },
+    {
+      "routePath": "/api/visitors",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/visitors.js:onRequestGet"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}
