@@ -55,7 +55,7 @@
                 <a href="#">🌟 about me</a>
                 <a href="#">⭐ my stuff</a>
                 <a href="#">📖 journal</a>
-                <a href="links/links.html">🔗 links</a>
+                <a href="pages/links.html">🔗 links</a>
                 <a href="#">🎲 random</a>
 
             </nav>
@@ -255,18 +255,8 @@
 
                     <h2>★ visitor board ★</h2>
 
-                    <div class="visitor-messages">
-
-                        <div class="visitor-message">
-                            <strong>DuckFan</strong>
-                            <span>hello from the internet!</span>
-                        </div>
-
-                        <div class="visitor-message">
-                            <strong>Anonymous</strong>
-                            <span>QUACK 🦆</span>
-                        </div>
-
+                    <div class="visitor-messages" id="visitor-messages">
+                        <p class="visitor-loading">loading messages...</p>
                     </div>
 
                     <div class="visitor-form">
@@ -436,6 +426,8 @@
          ====================================== -->
 
     <script type="module" src="script.js"></script>
+    <script type="module" src="utils/achievements.js"></script>
+    <script type="module" src="utils/visitor-board.js"></script>
 
     <script src="utils/spotify.js"></script>
 

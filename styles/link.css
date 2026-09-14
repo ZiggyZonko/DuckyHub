@@ -1,0 +1,197 @@
+/* =====================================
+   LINKS PAGE
+   ===================================== */
+
+.links-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto 60px;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.page-title h2 {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.page-title span {
+    font-size: 20px;
+    color: #fde68a;
+}
+
+.page-subtitle {
+    margin: 8px auto 25px;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+
+/* =====================================
+   LINKS GRID
+   ===================================== */
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+/* =====================================
+   LINK PANELS
+   ===================================== */
+
+.links-panel {
+    padding: 18px;
+    border: 3px solid;
+    border-radius: 10px;
+    min-height: 230px;
+    box-sizing: border-box;
+}
+
+.links-panel h3 {
+    margin: 0 0 15px;
+    text-align: center;
+
+    font-family: "Courier New", monospace;
+    font-size: 22px;
+}
+
+
+/* =====================================
+   LIST
+   ===================================== */
+
+.links-panel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links-panel li {
+    margin-bottom: 12px;
+    font-family: "Courier New", monospace;
+}
+
+.links-panel li a {
+    display: inline-block;
+
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.15s ease,
+        text-shadow 0.15s ease;
+}
+
+.links-panel li a:hover {
+    transform: translateX(6px);
+
+    text-shadow:
+        0 0 5px currentColor,
+        0 0 12px currentColor;
+}
+
+.links-panel li span {
+    display: block;
+
+    margin-top: 2px;
+    margin-left: 15px;
+
+    font-size: 10px;
+    opacity: 0.55;
+}
+
+
+/* =====================================
+   PANEL COLOURS
+   ===================================== */
+
+.links-yellow {
+    border-color: #fde68a;
+    background-color: rgba(253, 230, 138, 0.10);
+}
+
+.links-yellow h3 {
+    color: #fde68a;
+}
+
+
+.links-blue {
+    border-color: #93c5fd;
+    background-color: rgba(147, 197, 253, 0.10);
+}
+
+.links-blue h3 {
+    color: #93c5fd;
+}
+
+
+.links-pink {
+    border-color: #f9a8d4;
+    background-color: rgba(249, 168, 212, 0.10);
+}
+
+.links-pink h3 {
+    color: #f9a8d4;
+}
+
+
+.links-purple {
+    border-color: #c4b5fd;
+    background-color: rgba(196, 181, 253, 0.10);
+}
+
+.links-purple h3 {
+    color: #c4b5fd;
+}
+
+
+.links-cyan {
+    border-color: #67e8f9;
+    background-color: rgba(103, 232, 249, 0.10);
+}
+
+.links-cyan h3 {
+    color: #67e8f9;
+}
+
+
+.links-green {
+    border-color: #86efac;
+    background-color: rgba(134, 239, 172, 0.10);
+}
+
+.links-green h3 {
+    color: #86efac;
+}
+
+
+/* =====================================
+   MOBILE
+   ===================================== */
+
+@media (max-width: 800px) {
+
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .links-page {
+        width: 92%;
+    }
+
+}

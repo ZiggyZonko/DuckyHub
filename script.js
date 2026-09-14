@@ -1,5 +1,5 @@
 import { openDuckPlanet } from "./utils/duck-planet.js";
-import {achievements } from "./utils/achievements.js"
+import { unlockAchievement } from "./utils/achievements.js";
 console.log("Enter the ducky mainframe....")
 
 // ======= Constants ========= //
@@ -116,36 +116,6 @@ console.log("Enter the ducky mainframe....")
         unlockAchievement("first_quack");
 
     });
-
-// ========== Achievement ========== //
-
-function unlockAchievement(id) {
-
-    const key = `achievement_${id}`;
-
-    if (localStorage.getItem(key)) {
-        return;
-    }
-
-    localStorage.setItem(key, "true");
-
-    const achievement = achievements[id];
-
-    const popup = document.getElementById("achievement-popup");
-
-    popup.querySelector(".achievement-icon").textContent =
-        achievement.icon;
-
-    document.getElementById("achievement-name").textContent =
-        achievement.name;
-
-    popup.classList.add("show");
-
-    setTimeout(() => {
-        popup.classList.remove("show");
-    }, 4000);
-
-}
 
 //========== Math Problem ========= //
 const randomNumber =
