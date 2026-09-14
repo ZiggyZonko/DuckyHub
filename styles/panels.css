@@ -103,3 +103,258 @@
 
     color: rgba(255, 255, 255, 0.7);
 }
+
+.bottom-panels {
+    align-items: stretch;
+}
+
+.bottom-panels .panel {
+    margin: 0;
+}
+
+.visitor-board-panel {
+    flex: 1.4;
+}
+
+.visitor-count-panel {
+    flex: 0.7;
+}
+
+.achievements-panel {
+    flex: 1;
+}
+
+/* ==============================
+   VISITOR BOARD
+   ============================== */
+
+.visitor-board-panel {
+    border-color: #f9a8d4;
+    background-color: rgba(249, 168, 212, 0.12);
+}
+
+.visitor-board-panel h2 {
+    color: #f9a8d4;
+}
+
+.visitor-messages {
+    height: 150px;
+
+    overflow-y: auto;
+
+    margin-bottom: 10px;
+
+    padding-right: 4px;
+}
+
+.visitor-message {
+    margin-bottom: 7px;
+    padding: 7px;
+
+    border: 1px solid rgba(249, 168, 212, 0.4);
+    border-radius: 5px;
+
+    background: rgba(249, 168, 212, 0.06);
+
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+}
+
+.visitor-message strong {
+    color: #f9a8d4;
+}
+
+.visitor-message span {
+    display: block;
+    margin-top: 3px;
+}
+
+.visitor-form {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.visitor-form input {
+    box-sizing: border-box;
+
+    padding: 6px 8px;
+
+    border: 1px solid #f9a8d4;
+    border-radius: 5px;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    color: white;
+
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+
+    outline: none;
+}
+
+#visitor-name {
+    width: 90px;
+}
+
+#visitor-message {
+    flex: 1;
+    min-width: 100px;
+}
+
+.visitor-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.visitor-form button {
+    padding: 6px 9px;
+
+    border: 1px solid #f9a8d4;
+    border-radius: 5px;
+
+    background: rgba(249, 168, 212, 0.15);
+
+    color: white;
+
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+.visitor-form button:hover {
+    background: rgba(249, 168, 212, 0.3);
+}
+
+/* ==============================
+   VISITOR COUNT
+   ============================== */
+
+.visitor-count-panel {
+    border-color: #fde68a;
+    background-color: rgba(253, 230, 138, 0.12);
+
+    text-align: center;
+}
+
+.visitor-count-panel h2 {
+    color: #fde68a;
+}
+
+.visitor-count {
+    margin: 20px 0;
+
+    padding: 12px;
+
+    border: 2px solid #fde68a;
+
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#visitor-number {
+    display: block;
+
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    color: #fde68a;
+
+    text-shadow:
+        0 0 8px rgba(253, 230, 138, 0.6);
+}
+
+.visitor-count p {
+    margin: 8px 0 0;
+
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+
+    opacity: 0.7;
+}
+
+.visitor-counter-label {
+    font-family: "Courier New", monospace;
+    font-size: 9px;
+
+    opacity: 0.7;
+}
+
+.visitor-counter-label strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #fde68a;
+
+    font-size: 12px;
+}
+
+/* ==============================
+   ACHIEVEMENTS
+   ============================== */
+
+.achievements-panel {
+    border-color: #c4b5fd;
+    background-color: rgba(196, 181, 253, 0.12);
+}
+
+.achievements-panel h2 {
+    color: #c4b5fd;
+}
+
+#achievement-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 7px;
+
+    border: 1px solid rgba(196, 181, 253, 0.4);
+    border-radius: 5px;
+
+    background: rgba(196, 181, 253, 0.06);
+
+    font-family: "Courier New", monospace;
+}
+
+.achievement > span {
+    font-size: 20px;
+}
+
+.achievement strong {
+    font-size: 11px;
+}
+
+.achievement p {
+    margin: 2px 0 0;
+
+    font-size: 9px;
+
+    opacity: 0.6;
+}
+
+.achievement.locked {
+    opacity: 0.5;
+}
+
+.achievement-progress {
+    margin: 10px 0 0;
+
+    text-align: right;
+
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+
+    color: #c4b5fd;
+}

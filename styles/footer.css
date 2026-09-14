@@ -1,0 +1,42 @@
+footer {
+    padding: 45px 0;
+
+    text-align: center;
+
+    color: #776982;
+}
+
+.footer-duck {
+    font-size: 45px;
+
+    animation: footerDuck 2s ease-in-out infinite;
+}
+
+@keyframes footerDuck {
+    0%, 100% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+footer p {
+    margin: 8px 0;
+
+    font-weight: 800;
+}
+
+.footer-small {
+    font-size: 11px;
+
+    color: #9a8ca1;
+}
+
+.footer-links {
+    margin-top: 15px;
+
+    font-size: 12px;
+    font-weight: 800;
+}

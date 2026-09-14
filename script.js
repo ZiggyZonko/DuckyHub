@@ -153,3 +153,32 @@ const randomNumber =
 
 document.getElementById("math-problem-image").src =
     `assets/mathproblems/${randomNumber}.png`;
+
+// =========== Visitor Count ========= //
+async function updateVisitorCount() {
+
+    try {
+
+        const response = await fetch("/api/visitors");
+
+        const data = await response.json();
+
+        const count = data.count;
+
+        // Main counter
+        document.getElementById("visitor-number").textContent =
+            count.toString().padStart(6, "0");
+
+        // Current visitor number
+        document.getElementById("current-visitor").textContent =
+            "#" + count.toString().padStart(6, "0");
+
+    } catch (error) {
+
+        console.error("Could not get visitor count:", error);
+
+    }
+
+}
+
+updateVisitorCount();
